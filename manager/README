@@ -1,0 +1,16 @@
+Tech-Thing KiCad library manager v1.0
+by Jaanus Kalde
+http://jaanus.tech-thing.org
+
+You can browse and edit your KiCad library and module files. Supports library components with aliases, just use / between aliases (example: OPA334/OPA2334/OPA335/OPA2335).
+
+To use: modify config.txt to your library and module folders and run the program with python.
+
+You can modify your library and module folders from config.txt.
+
+Changelog:
+ver 1.0
+   Basic functionality works
+   
+Freeware, you can share and change it. But not sell.
+http://creativecommons.org/licenses/by-nc-sa/3.0/
