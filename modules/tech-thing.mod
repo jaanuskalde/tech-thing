@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  T 26 veebr 2013 11:26:57 EET
+PCBNEW-LibModule-V1  T 26 veebr 2013 12:08:27 EET
 # encoding utf-8
 Units mm
 $INDEX
@@ -23,7 +23,9 @@ conn_3
 conn_3_3.5mm_screw
 conn_3x2
 conn_3x2_IDC
+conn_4
 conn_5
+conn_6
 conn_power_smd
 drill_3.2mm
 logo_OSWH
@@ -217,13 +219,13 @@ Po 7.5 0
 $EndPAD
 $EndMODULE C_5x17.5mm_15
 $MODULE DFN16_5x3mm
-Po 0 0 0 15 512C7FDA 00000000 ~~
+Po 0 0 0 15 512C8995 00000000 ~~
 Li DFN16_5x3mm
 Sc 0
 AR 
 Op 0 0 0
-T0 -0.5 -9.5 1 1 0 0.15 N I 21 N "DFN16_5x3mm"
-T1 0 11.5 1 1 0 0.15 N V 21 N "VAL**"
+T0 -3.2 0 1 1 900 0.15 N I 21 N "DFN16_5x3mm"
+T1 3.2 0 1 1 900 0.15 N V 21 N "VAL**"
 DC -2.1 1.1 -1.9 1.2 0.1 21
 DS -2.5 -1.5 2.5 -1.5 0.1 21
 DS 2.5 -1.5 2.5 1.5 0.1 21
@@ -1849,6 +1851,55 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE conn_3x2_IDC
+$MODULE conn_4
+Po 0 0 0 15 4C10F42E 00000000 ~~
+Li conn_4
+Cd Double rangee de contacts 2 x 5 pins
+Kw CONN
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2.54 1.016 1.016 0 0.2032 N V 21 N "PIN_ARRAY_4X1"
+T1 0 2.54 1.016 1.016 0 0.2032 N I 21 N "Val**"
+DS 5.08 1.27 -5.08 1.27 0.254 21
+DS 5.08 -1.27 -5.08 -1.27 0.254 21
+DS -5.08 -1.27 -5.08 1.27 0.254 21
+DS 5.08 1.27 5.08 -1.27 0.254 21
+$PAD
+Sh "1" R 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 0
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 0
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 0
+$EndPAD
+$PAD
+Sh "4" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 0
+$EndPAD
+$SHAPE3D
+Na "pin_array\\pins_array_4x1.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE conn_4
 $MODULE conn_5
 Po 0 0 0 15 50EC931D 00000000 ~~
 Li conn_5
@@ -1905,6 +1956,70 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE conn_5
+$MODULE conn_6
+Po 0 0 0 15 41402119 00000000 ~~
+Li conn_6
+Cd Connecteur 6 pins
+Kw CONN DEV
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2.159 1.016 1.016 0 0.2032 N V 21 N "PIN_ARRAY-6X1"
+T1 0 2.159 1.016 0.889 0 0.2032 N I 21 N "Val**"
+DS -7.62 1.27 -7.62 -1.27 0.3048 21
+DS -7.62 -1.27 7.62 -1.27 0.3048 21
+DS 7.62 -1.27 7.62 1.27 0.3048 21
+DS 7.62 1.27 -7.62 1.27 0.3048 21
+DS -5.08 1.27 -5.08 -1.27 0.3048 21
+$PAD
+Sh "1" R 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 0
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 0
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 0
+$EndPAD
+$PAD
+Sh "4" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 0
+$EndPAD
+$PAD
+Sh "5" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 0
+$EndPAD
+$PAD
+Sh "6" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 0
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_6x1.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE conn_6
 $MODULE conn_power_smd
 Po 0 0 0 15 50F96C72 00000000 ~~
 Li conn_power_smd
