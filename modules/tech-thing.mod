@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  T 04 juuni 2013 16:39:12 EEST
+PCBNEW-LibModule-V1  T 18 juuni 2013 00:44:25 EEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -20,6 +20,7 @@ DP3030_V1
 DPAK
 DPAK-SOT223
 FUSE_HOLDER_20x5mm
+HTSSOP-28
 Inductor_LPS4414
 Jumper3-solder
 RESONATOR
@@ -47,6 +48,7 @@ conn_4
 conn_5
 conn_6
 conn_8
+conn_8_5mm
 conn_USB_A
 conn_USB_B
 conn_USB_MINI_B
@@ -967,6 +969,223 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE FUSE_HOLDER_20x5mm
+$MODULE HTSSOP-28
+Po 0 0 0 15 51BF8003 00000000 ~~
+Li HTSSOP-28
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4.5 1 1 0 0.15 N I 21 N "HTSSOP-28"
+T1 0 4.7 1 1 0 0.15 N I 21 N "VAL**"
+DC -4 1.25 -3.5 1.25 0.15 21
+DS 5 -2.25 -5 -2.25 0.15 21
+DS -5 -2.25 -5 2.25 0.15 21
+DS -5 2.25 5 2.25 0.15 21
+DS 5 2.25 5 -2.25 0.15 21
+$PAD
+Sh "15" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.225 -2.8
+$EndPAD
+$PAD
+Sh "16" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 7.15 -5.6
+$EndPAD
+$PAD
+Sh "17" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.85 -5.6
+$EndPAD
+$PAD
+Sh "18" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.55 -5.6
+$EndPAD
+$PAD
+Sh "19" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.25 -5.6
+$EndPAD
+$PAD
+Sh "20" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.95 -5.6
+$EndPAD
+$PAD
+Sh "21" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.65 -5.6
+$EndPAD
+$PAD
+Sh "22" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.65 -5.6
+$EndPAD
+$PAD
+Sh "23" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.95 -5.6
+$EndPAD
+$PAD
+Sh "24" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.25 -5.6
+$EndPAD
+$PAD
+Sh "25" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.55 -5.6
+$EndPAD
+$PAD
+Sh "26" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.85 -5.6
+$EndPAD
+$PAD
+Sh "27" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -7.15 -5.6
+$EndPAD
+$PAD
+Sh "28" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -8.45 -5.6
+$EndPAD
+$PAD
+Sh "1" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.225 2.8
+$EndPAD
+$PAD
+Sh "2" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.575 2.8
+$EndPAD
+$PAD
+Sh "3" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.925 2.8
+$EndPAD
+$PAD
+Sh "4" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.275 2.8
+$EndPAD
+$PAD
+Sh "5" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.625 2.8
+$EndPAD
+$PAD
+Sh "6" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.975 2.8
+$EndPAD
+$PAD
+Sh "7" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.65 5.6
+$EndPAD
+$PAD
+Sh "8" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.65 5.6
+$EndPAD
+$PAD
+Sh "9" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.95 5.6
+$EndPAD
+$PAD
+Sh "10" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.625 2.8
+$EndPAD
+$PAD
+Sh "11" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.55 5.6
+$EndPAD
+$PAD
+Sh "12" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.85 5.6
+$EndPAD
+$PAD
+Sh "13" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 7.15 5.6
+$EndPAD
+$PAD
+Sh "14" R 0.3 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 8.45 5.6
+$EndPAD
+$PAD
+Sh "29" R 6.17 2.4 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE HTSSOP-28
 $MODULE Inductor_LPS4414
 Po 0 0 0 15 5133E708 00000000 ~~
 Li Inductor_LPS4414
@@ -3866,6 +4085,75 @@ Ne 0 ""
 Po -8.89 0
 $EndPAD
 $EndMODULE conn_8
+$MODULE conn_8_5mm
+Po 0 0 0 15 51BF82CD 00000000 ~~
+Li conn_8_5mm
+Sc 0
+AR 
+Op 0 0 0
+T0 0 3.5 1 1 0 0.15 N I 21 N "conn_8_5mm"
+T1 0 -3 1 1 0 0.15 N I 21 N "VAL**"
+DS -25 -4 25 -4 0.15 21
+DS 25 -4 25 4.5 0.15 21
+DS 25 4.5 -25 4.5 0.15 21
+DS -25 4.5 -25 -4 0.15 21
+$PAD
+Sh "1" R 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -17.5 0
+$EndPAD
+$PAD
+Sh "2" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -12.5 0
+$EndPAD
+$PAD
+Sh "3" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7.5 0
+$EndPAD
+$PAD
+Sh "4" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.5 0
+$EndPAD
+$PAD
+Sh "5" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.5 0
+$EndPAD
+$PAD
+Sh "6" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7.5 0
+$EndPAD
+$PAD
+Sh "7" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 12.5 0
+$EndPAD
+$PAD
+Sh "8" C 2.6 2.6 0 0 0
+Dr 1.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 17.5 0
+$EndPAD
+$EndMODULE conn_8_5mm
 $MODULE conn_USB_A
 Po 0 0 0 15 48A934F2 00000000 ~~
 Li conn_USB_A
