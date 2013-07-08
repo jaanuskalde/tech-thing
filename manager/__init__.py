@@ -114,7 +114,7 @@ def getLibContent(filename):
             if content[i+e][0:6] == 'ALIAS ':
                a = content[i+e].split()
                a[0] = list[len(list)-1]
-               list[len(list)-1] = '/'.join(a)
+               list[len(list)-1] = '\\'.join(a)
    return list
 
 def newModule():
@@ -199,11 +199,11 @@ def __renameModContent():
    out('Renamed the module.',2)   
    popup.destroy()
    
-
+#Renaming library content
 def renameLibContent(filename, libname):
    global popup, popupContent, __filename, __name
    __filename = filename
-   __name = libname.split('/')[0]
+   __name = libname.split('\\')[0]
    popup = Toplevel()
    popup.title('Rename lib content')
    popupContent = StringVar(value=libname)
@@ -212,15 +212,16 @@ def renameLibContent(filename, libname):
    box.pack(side=LEFT)
    Button(popup, text='OK', command=__renameLibContent).pack(side=LEFT)
 
+#Callback for renaming
 def __renameLibContent2(arg): __renameLibContent()
 def __renameLibContent():
    #think new names and aliases from the format
-   if popupContent.get().find('/') == -1:
+   if popupContent.get().find('\\') == -1:
       newName=popupContent.get()
       newAlias=''
    else:#user entered name with aliases
-      newName=popupContent.get().split('/')[0]
-      newAlias='ALIAS '+' '.join(popupContent.get().split('/')[1:])+'\n'
+      newName=popupContent.get().split('\\')[0]
+      newAlias='ALIAS '+' '.join(popupContent.get().split('\\')[1:])+'\n'
 
    #get file content
    f=open(__filename, 'r')
@@ -279,8 +280,8 @@ def deleteLibContent(filename, libnames):
    #find the bastard(s)
    for wanted in libnames:
       #lets get these aliases out of the way
-      if wanted.find('/') != -1:
-         wanted=wanted.split('/')[0]
+      if wanted.find('\\') != -1:
+         wanted=wanted.split('\\')[0]
          
       for i in range(len(content)):
          if content[i][0:(4+len(wanted))]=='DEF '+wanted:
@@ -311,8 +312,8 @@ def copyLibContent(filename, libnames, dest):
    #find the bastard(s)
    for wanted in libnames:
       #lets get these aliases out of the way
-      if wanted.find('/') != -1:
-         wanted=wanted.split('/')[0]
+      if wanted.find('\\') != -1:
+         wanted=wanted.split('\\')[0]
       #if you copy to the same place you copy from
       if filename == dest:
          wanted = 'CopyOf'+wanted
