@@ -4,44 +4,79 @@
 #loop through all files
 for f in *
 do
-   if [ ${f: -9} == "-Back.gbl" ]
+   if [ "${f: -9}" == "-Back.gbl" ]
    then
-      mv "$f" "${f:0: -9}.GBL"
+      mv -v "$f" "${f:0: -9}.GBL"
    fi
 
-   if [ ${f: -10} == "-Front.gtl" ]
+   if [ "${f: -10}" == "-Front.gtl" ]
    then
-      mv "$f" "${f:0: -10}.GTL"
+      mv -v "$f" "${f:0: -10}.GTL"
    fi
    
-   if [ ${f: -15} == "-Mask_Front.gts" ]
+   if [ "${f: -15}" == "-Mask_Front.gts" ]
    then
-      mv "$f" "${f:0: -15}.GTS"
+      mv -v "$f" "${f:0: -15}.GTS"
    fi
 
-   if [ ${f: -14} == "-Mask_Back.gbs" ]
+   if [ "${f: -14}" == "-Mask_Back.gbs" ]
    then
-      mv "$f" "${f:0: -14}.GBS"
+      mv -v "$f" "${f:0: -14}.GBS"
    fi
    
-   if [ ${f: -16} == "-SilkS_Front.gto" ]
+   if [ "${f: -16}" == "-SilkS_Front.gto" ]
    then
-      mv "$f" "${f:0: -16}.GTO"
+      mv -v "$f" "${f:0: -16}.GTO"
    fi
 
-   if [ ${f: -15} == "-SilkS_Back.gbo" ]
+   if [ "${f: -15}" == "-SilkS_Back.gbo" ]
    then
-      mv "$f" "${f:0: -15}.GBO"
+      mv -v "$f" "${f:0: -15}.GBO"
    fi
 
-   if [ ${f: -4} == ".drl" ]
+   if [ "${f: -4}" == ".drl" ]
    then
-      mv "$f" "${f:0: -4}.TXT"
+      mv -v "$f" "${f:0: -4}.TXT"
    fi
 
-   if [ ${f: -14} == "-PCB_Edges.gbr" ]
+   if [ "${f: -14}" == "-PCB_Edges.gbr" ]
    then
-      mv "$f" "${f:0: -14}.BOR"
+      mv -v "$f" "${f:0: -14}.BOR"
+   fi
+
+   if [ "${f: -9}" == "-B_Cu.gbl" ]
+   then
+      mv -v "$f" "${f:0: -9}.GBL"
+   fi
+
+   if [ "${f: -9}" == "-F_Cu.gtl" ]
+   then
+      mv -v "$f" "${f:0: -9}.GTL"
+   fi
+   
+   if [ "${f: -11}" == "-F_Mask.gts" ]
+   then
+      mv -v "$f" "${f:0: -11}.GTS"
+   fi
+
+   if [ "${f: -11}" == "-B_Mask.gbs" ]
+   then
+      mv -v "$f" "${f:0: -11}.GBS"
+   fi
+   
+   if [ "${f: -12}" == "-F_SilkS.gto" ]
+   then
+      mv -v "$f" "${f:0: -12}.GTO"
+   fi
+
+   if [ "${f: -12}" == "-B_SilkS.gbo" ]
+   then
+      mv -v "$f" "${f:0: -12}.GBO"
+   fi
+
+   if [ "${f: -14}" == "-Edge_Cuts.gbr" ]
+   then
+      mv -v "$f" "${f:0: -14}.BOR"
    fi
 
 done

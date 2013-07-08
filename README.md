@@ -18,4 +18,3 @@ Gerber renamer
 --------------
 Put in the folder you generated your gerbers and run from shell.
 
-The version with 2 in the back is for KiCAD daily build and normal one is for default ubuntu one.
