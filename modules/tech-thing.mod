@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  K 10 juuli 2013 13:19:16 EEST
+PCBNEW-LibModule-V1  N 11 juuli 2013 00:14:52 EEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -30,6 +30,7 @@ Jumper3-solder
 LGA_CE-3-2
 PLCC-5050
 RESONATOR
+S-XBGA-N9
 SO16E
 SO8E
 SOD-123F
@@ -1591,6 +1592,84 @@ Ne 3 "N-000005"
 Po 1.95 0
 $EndPAD
 $EndMODULE RESONATOR
+$MODULE S-XBGA-N9
+Po 0 0 0 15 51DDCEA7 00000000 ~~
+Li S-XBGA-N9
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4.4 1.524 1.524 0 0.3048 N V 21 N "S-XBGA-N9"
+T1 0 4.7 1.524 1.524 0 0.3048 N V 21 N "VAL**"
+DS -0.2 -0.6 -0.2 -0.2 0.09906 21
+DS -0.2 -0.2 -0.6 -0.2 0.09906 21
+DS 0.6 -0.6 -0.6 -0.6 0.09906 21
+DS -0.6 -0.6 -0.6 0.6 0.09906 21
+DS -0.6 0.6 0.6 0.6 0.09906 21
+DS 0.6 0.6 0.6 -0.6 0.09906 21
+$PAD
+Sh "B2" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "B3" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.4 0
+$EndPAD
+$PAD
+Sh "B1" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.4 0
+$EndPAD
+$PAD
+Sh "A1" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.4 -0.4
+$EndPAD
+$PAD
+Sh "A2" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -0.4
+$EndPAD
+$PAD
+Sh "A3" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.4 -0.4
+$EndPAD
+$PAD
+Sh "C1" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.4 0.4
+$EndPAD
+$PAD
+Sh "C2" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0.4
+$EndPAD
+$PAD
+Sh "C3" C 0.2 0.2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.4 0.4
+$EndPAD
+$EndMODULE S-XBGA-N9
 $MODULE SO16E
 Po 0 0 0 15 51DBFAD2 00000000 ~~
 Li SO16E
