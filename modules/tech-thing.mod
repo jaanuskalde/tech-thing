@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  K 10 juuli 2013 11:21:25 EEST
+PCBNEW-LibModule-V1  K 10 juuli 2013 13:19:16 EEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -173,25 +173,25 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE 1206
 $MODULE CP_5mm
-Po 0 0 0 15 51221DEF 00000000 ~~
+Po 0 0 0 15 51DD345F 00000000 ~~
 Li CP_5mm
 Sc 0
 AR 
 Op 0 0 0
 T0 0 -1.25 1 1 0 0.15 N V 21 N "CP_5mm"
-T1 0 1.25 1 1 0 0.15 N V 21 N "VAL**"
+T1 0 1.25 1 1 0 0.15 N I 21 N "VAL**"
 DS 1.5 -2 1.5 2 0.15 21
 DC 0 0 2.5 0 0.15 21
 $PAD
-Sh "1" C 0.8 0.8 0 0 0
-Dr 0.5 0 0
+Sh "1" C 1 1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -1 0
 $EndPAD
 $PAD
-Sh "2" C 0.8 0.8 0 0 0
-Dr 0.5 0 0
+Sh "2" C 1 1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 1 0
@@ -1324,13 +1324,13 @@ Po -0.975 -2.1
 $EndPAD
 $EndMODULE HTSSOP-8
 $MODULE HTSSOP-8-PAD
-Po 0 0 0 15 51DD18C6 00000000 ~~
+Po 0 0 0 15 51DD3522 00000000 ~~
 Li HTSSOP-8-PAD
 Sc 0
-AR 
+AR /51DD343B
 Op 0 0 0
-T0 -2.1 0 1 1 900 0.15 N I 21 N "HTSSOP-8-PAD"
-T1 2.2 0 1 1 900 0.15 N V 21 N "VAL**"
+T0 -2.1 0 1 1 900 0.15 N V 21 N "U1"
+T1 2.2 0 1 1 900 0.15 N I 21 N "TPA6211"
 DC -1.2 1 -1 1 0.15 21
 DS -1.5 -1.5 1.5 -1.5 0.15 21
 DS 1.5 -1.5 1.5 1.5 0.15 21
@@ -1340,63 +1340,63 @@ $PAD
 Sh "1" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 7 "VCC"
 Po -0.975 2.1
 $EndPAD
 $PAD
 Sh "2" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 4 "N-000006"
 Po -0.325 2.1
 $EndPAD
 $PAD
 Sh "3" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 3 "N-000004"
 Po 0.325 2.1
 $EndPAD
 $PAD
 Sh "4" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 2 "N-000003"
 Po 0.975 2.1
 $EndPAD
 $PAD
 Sh "5" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 5 "N-000007"
 Po 0.975 -2.1
 $EndPAD
 $PAD
 Sh "6" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 6 "N-000008"
 Po 0.325 -2.1
 $EndPAD
 $PAD
 Sh "7" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 1 "GND"
 Po -0.325 -2.1
 $EndPAD
 $PAD
 Sh "8" R 0.4 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 7 "VCC"
 Po -0.975 -2.1
 $EndPAD
 $PAD
 Sh "9" R 1.9 1.6 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 1 "GND"
 Po 0 0
 $EndPAD
 $EndMODULE HTSSOP-8-PAD
