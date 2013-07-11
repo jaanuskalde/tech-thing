@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  N 11 juuli 2013 00:14:52 EEST
+PCBNEW-LibModule-V1  N 11 juuli 2013 12:11:00 EEST
 # encoding utf-8
 Units mm
 $INDEX
@@ -24,8 +24,9 @@ DPAK-SOT223
 FUSE_HOLDER_20x5mm
 HTSSOP-28
 HTSSOP-8
-HTSSOP-8-PAD
 Inductor_LPS4414
+Inductor_LPS6235
+Inductor_MSS5131
 Jumper3-solder
 LGA_CE-3-2
 PLCC-5050
@@ -42,6 +43,7 @@ TQFP32
 TQFP44
 TQFP64
 TQFP64_0.5mm
+TSSOP-8
 battery-THT-20mm
 conn_10
 conn_1_smd_round
@@ -57,6 +59,7 @@ conn_5
 conn_6
 conn_8
 conn_8_5mm
+conn_8_smd_2mm
 conn_USB_A
 conn_USB_B
 conn_USB_MINI_B
@@ -1255,78 +1258,8 @@ Po 0 0
 $EndPAD
 $EndMODULE HTSSOP-28
 $MODULE HTSSOP-8
-Po 0 0 0 15 51DD18D0 00000000 ~~
-Li HTSSOP-8
-Sc 0
-AR 
-Op 0 0 0
-T0 -2.1 0 1 1 900 0.15 N I 21 N "HTSSOP-8-PAD"
-T1 2.2 0 1 1 900 0.15 N V 21 N "VAL**"
-DC -1.2 1 -1 1 0.15 21
-DS -1.5 -1.5 1.5 -1.5 0.15 21
-DS 1.5 -1.5 1.5 1.5 0.15 21
-DS 1.5 1.5 -1.5 1.5 0.15 21
-DS -1.5 1.5 -1.5 -1.5 0.15 21
-$PAD
-Sh "1" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -0.975 2.1
-$EndPAD
-$PAD
-Sh "2" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -0.325 2.1
-$EndPAD
-$PAD
-Sh "3" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0.325 2.1
-$EndPAD
-$PAD
-Sh "4" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0.975 2.1
-$EndPAD
-$PAD
-Sh "5" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0.975 -2.1
-$EndPAD
-$PAD
-Sh "6" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0.325 -2.1
-$EndPAD
-$PAD
-Sh "7" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -0.325 -2.1
-$EndPAD
-$PAD
-Sh "8" R 0.4 1.6 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -0.975 -2.1
-$EndPAD
-$EndMODULE HTSSOP-8
-$MODULE HTSSOP-8-PAD
 Po 0 0 0 15 51DD3522 00000000 ~~
-Li HTSSOP-8-PAD
+Li HTSSOP-8
 Sc 0
 AR /51DD343B
 Op 0 0 0
@@ -1400,7 +1333,7 @@ At SMD N 00888000
 Ne 1 "GND"
 Po 0 0
 $EndPAD
-$EndMODULE HTSSOP-8-PAD
+$EndMODULE HTSSOP-8
 $MODULE Inductor_LPS4414
 Po 0 0 0 15 5133E708 00000000 ~~
 Li Inductor_LPS4414
@@ -1432,6 +1365,67 @@ Ne 0 ""
 Po 1.55 0
 $EndPAD
 $EndMODULE Inductor_LPS4414
+$MODULE Inductor_LPS6235
+Po 0 0 0 15 51DE75A3 00000000 ~~
+Li Inductor_LPS6235
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4 1 1 0 0.15 N V 21 N "Inductor_LPS6235"
+T1 0 4 1 1 0 0.15 N I 21 N "VAL**"
+DS -2 -3 2 -3 0.15 21
+DS 2 -3 3 -2 0.15 21
+DS 3 -2 3 2 0.15 21
+DS 3 2 2 3 0.15 21
+DS 2 3 -2 3 0.15 21
+DS -2 3 -3 2 0.15 21
+DS -3 2 -3 -2 0.15 21
+DS -3 -2 -2 -3 0.15 21
+$PAD
+Sh "1" R 2.2 6.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.1 0
+$EndPAD
+$PAD
+Sh "2" R 2.2 6.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.1 0
+$EndPAD
+$EndMODULE Inductor_LPS6235
+$MODULE Inductor_MSS5131
+Po 0 0 0 15 51DE769F 00000000 ~~
+Li Inductor_MSS5131
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -3.5 1 1 0 0.15 N V 21 N "Inductor_LPS6235"
+T1 0 3.5 1 1 0 0.15 N I 21 N "VAL**"
+DC 0 0 2 1 0.15 21
+DS -1.5 -2.5 2.5 -2.5 0.15 21
+DS 2.5 -2.5 2.5 1.5 0.15 21
+DS 2.5 1.5 1.5 2.5 0.15 21
+DS 1.5 2.5 -2.5 2.5 0.15 21
+DS -2.5 2.5 -2.5 -1.5 0.15 21
+DS -2.5 -1.5 -1.5 -2.5 0.15 21
+$PAD
+Sh "1" R 5 1.74 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -1.63
+$EndPAD
+$PAD
+Sh "2" R 5 1.74 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 1.63
+$EndPAD
+$EndMODULE Inductor_MSS5131
 $MODULE Jumper3-solder
 Po 0 0 0 15 51DBF95C 00000000 ~~
 Li Jumper3-solder
@@ -1498,13 +1492,13 @@ Po -1 -0.61
 $EndPAD
 $EndMODULE LGA_CE-3-2
 $MODULE PLCC-5050
-Po 0 0 0 15 51DC2E3E 00000000 ~~
+Po 0 0 0 15 51DE6919 00000000 ~~
 Li PLCC-5050
 Sc 0
-AR 
+AR /51DE6A07
 Op 0 0 0
-T0 0.05 -3.9 1.5 1.5 0 0.15 N I 21 N "PLCC-5050"
-T1 0 4 1.5 1.5 0 0.15 N V 21 N "VAL**"
+T0 0.05 -3.9 1.5 1.5 0 0.15 N V 21 N "D1"
+T1 0 4 1.5 1.5 0 0.15 N I 21 N "LED-RGB-5050"
 DS -0.5 -2.5 -2.5 -0.5 0.15 21
 DS -2.5 -2.5 2.5 -2.5 0.15 21
 DS 2.5 -2.5 2.5 2.5 0.15 21
@@ -1514,42 +1508,42 @@ $PAD
 Sh "1" R 1.3 1.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 6 "N-0000036"
 Po -2.2 -1.6
 $EndPAD
 $PAD
 Sh "2" R 1.3 1.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 1 "N-0000025"
 Po 2.2 -1.6
 $EndPAD
 $PAD
 Sh "3" R 1.3 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 2 "N-0000026"
 Po -2.2 0
 $EndPAD
 $PAD
 Sh "4" R 1.3 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 3 "N-0000027"
 Po 2.2 0
 $EndPAD
 $PAD
 Sh "5" R 1.3 1.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 4 "N-0000028"
 Po -2.2 1.6
 $EndPAD
 $PAD
 Sh "6" R 1.3 1.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 5 "N-0000029"
 Po 2.2 1.6
 $EndPAD
 $EndMODULE PLCC-5050
@@ -3726,6 +3720,76 @@ Of 0 0 0.001
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE TQFP64_0.5mm
+$MODULE TSSOP-8
+Po 0 0 0 15 51DDD56D 00000000 ~~
+Li TSSOP-8
+Sc 0
+AR 
+Op 0 0 0
+T0 -2.1 0 1 1 900 0.15 N I 21 N "TSSOP-8"
+T1 2.1 0 1 1 900 0.15 N V 21 N "VAL**"
+DC -0.8 1.4 -0.5 1.4 0.09906 21
+DS -1.5 -2.2 1.4 -2.2 0.09906 21
+DS -1.5 2.2 1.4 2.2 0.09906 21
+DS 1.4 2.2 1.4 -2.2 0.09906 21
+DS -1.5 -2.2 -1.5 2.2 0.09906 21
+$PAD
+Sh "1" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.975 2.7
+$EndPAD
+$PAD
+Sh "2" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.325 2.7
+$EndPAD
+$PAD
+Sh "3" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.325 2.7
+$EndPAD
+$PAD
+Sh "4" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.975 2.7
+$EndPAD
+$PAD
+Sh "5" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.975 -2.7
+$EndPAD
+$PAD
+Sh "6" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.325 -2.7
+$EndPAD
+$PAD
+Sh "7" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.325 -2.7
+$EndPAD
+$PAD
+Sh "8" R 0.4 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.975 -2.7
+$EndPAD
+$EndMODULE TSSOP-8
 $MODULE battery-THT-20mm
 Po 0 0 0 15 4F63ADAC 00000000 ~~
 Li battery-THT-20mm
@@ -4566,6 +4630,71 @@ Ne 0 ""
 Po 17.5 0
 $EndPAD
 $EndMODULE conn_8_5mm
+$MODULE conn_8_smd_2mm
+Po 0 0 0 15 51DE68EA 00000000 ~~
+Li conn_8_smd_2mm
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -3.5 1 1 0 0.15 N V 21 N "conn_8_smd_2mm"
+T1 0 3.5 1 1 0 0.15 N I 21 N "VAL**"
+$PAD
+Sh "1" R 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po -7 0
+$EndPAD
+$PAD
+Sh "2" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po -5 0
+$EndPAD
+$PAD
+Sh "4" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po -1 0
+$EndPAD
+$PAD
+Sh "5" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po 1 0
+$EndPAD
+$PAD
+Sh "6" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po 3 0
+$EndPAD
+$PAD
+Sh "7" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "8" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po 7 0
+$EndPAD
+$PAD
+Sh "3" O 1 5 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 0 ""
+Po -3 0
+$EndPAD
+$EndMODULE conn_8_smd_2mm
 $MODULE conn_USB_A
 Po 0 0 0 15 48A934F2 00000000 ~~
 Li conn_USB_A
